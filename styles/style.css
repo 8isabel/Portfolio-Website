@@ -1,0 +1,75 @@
+:root {
+    /* Colors */
+    --bg-color: #0F172A;
+    --primary-color: #38BDF8;
+    --secondary-color: #A855F7;
+    --text-color: #F8FAFC;
+    --card-color: rgba(255, 255, 255, 0.08);
+    --border-color: rgba(56, 189, 248, 0.2);
+
+    /* Effects */
+    --blur: blur(12px);
+    --transition: 0.3s ease;
+
+    /* Shadows */
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    /* Border radius */
+    --radius: 16px;
+}
+
+
+/* Navbar */
+
+.custom-navbar {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: var(--blur);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+
+/* Logo */
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+    font-size: 1.3rem;
+}
+
+
+/* Navbar links */
+
+.nav-link {
+    color: var(--text-color) !important;
+    margin-left: 15px;
+    transition: var(--transition);
+}
+
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+
+/* GitHub knop */
+
+.btn-outline-info {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+
+.btn-outline-info:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+
+/* Body */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding-top: 80px;
+}
