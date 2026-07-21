@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="scritps/script.js" defer></script>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/terminal.css">
+    <script src="scritps/script.js" defer></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./scritps/terminal.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
+            <a class="navbar-brand fw-bold" href="index.html">
                 &lt; Isabel.dev /&gt;
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,5 +54,18 @@
             </div>
         </div>
     </nav>
+    <section class="terminal-section container">
+        <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+        </div>
+        <div id="outcome">
+            <p>> Welkom on Isabel.dev</p>
+            <p>> Typ "help" for available commands</p>
+        </div>
+        <input type="text" id="input" placeholder="Type een commando..." autofocus>
+    </section>
+     
 </body>
 </html>
