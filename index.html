@@ -4,104 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/terminal.css">
-    <script src="scritps/script.js" defer></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="./scritps/terminal.js" defer></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/contact.css">
+    <script type="module" src="./scritps/contact.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script type="module" src="./scritps/terminal.js" defer></script>
+    <title>Isabel.dev</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                &lt; Isabel.dev /&gt;
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bold" href="./index.html">&lt; Isabel.dev /&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">
-                            About
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">
-                            Projects
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">
-                            Skills
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">
-                            Contact
-                        </a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/contact.html">Contact</a></li>
                 </ul>
-                <a href="https://github.com/" class="btn btn-outline-info ms-lg-3" target="_blank">
-                    GitHub &gt;
-                </a>
+                <a href="https://github.com/" class="btn btn-outline-info ms-lg-3" target="_blank">GitHub &gt;</a>
             </div>
         </div>
     </nav>
+
+    <div class="background-grid"></div>
+    <div class="floating-code code-1">&lt;/&gt;</div>
+    <div class="floating-code code-2">{ }</div>
+    <div class="floating-code code-3">SQL</div>
+    <div class="floating-code code-4">npm run dev</div>
+
     <button id="terminalToggle" class="terminal-toggle">
         <span class="terminal-icon">&gt;_</span>
         <span class="terminal-toggle-text">Terminal</span>
     </button>
 
     <div id="terminalPopup" class="terminal-popup">
-
         <div class="terminal-window">
-
             <div class="terminal-header">
-
                 <div class="terminal-dots">
                     <span class="dot red"></span>
                     <span class="dot yellow"></span>
                     <span class="dot green"></span>
                 </div>
-
-                <span class="terminal-title">
-                    Isabel.dev — terminal
-                </span>
-
-                <button id="terminalClose" class="terminal-close">
-                    x
-                </button>
-
+                <span class="terminal-title">Isabel.dev — terminal</span>
+                <button id="terminalClose" class="terminal-close">x</button>
             </div>
-            
             <div id="outcome">
-
                 <p>&gt; Welcome to Isabel.dev</p>
                 <p>&gt; Type "help" for available commands</p>
-
             </div>
-
             <div class="terminal-input-wrapper">
                 <span class="terminal-prompt">&gt;</span>
-
-                <input
-                    type="text"
-                    id="input"
-                    placeholder="Type a command..."
-                    autocomplete="off"
-                >
+                <input type="text" id="input" placeholder="Type a command..." autocomplete="off">
             </div>
-
         </div>
-
     </div>
-        
 </body>
 </html>

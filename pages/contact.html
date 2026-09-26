@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/terminal.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../scritps/contact.js" defer></script>
+    <title>Contact — Isabel.dev</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">&lt; Isabel.dev /&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-info ms-lg-3">GitHub &gt;</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="background-grid"></div>
+    <div class="floating-code code-1">&lt;/&gt;</div>
+    <div class="floating-code code-2">{ }</div>
+    <div class="floating-code code-3">SQL</div>
+    <div class="floating-code code-4">npm run dev</div>
+
+    <main class="contact-page">
+        <section class="contact-hero container">
+            <div class="hero-badge"><span class="status-dot"></span>AVAILABLE FOR NEW IDEAS</div>
+            <h1>Let's build <span>something.</span></h1>
+            <p>Have a project idea, a cool concept or something you think I should build?</p>
+            <p>Send it my way.</p>
+        </section>
+
+        <section class="skills-marquee">
+            <div class="marquee-track">
+                <span>HTML</span><i>•</i>
+                <span>CSS</span><i>•</i>
+                <span>JavaScript</span><i>•</i>
+                <span>Bootstrap</span><i>•</i>
+                <span>SQL</span><i>•</i>
+                <span>Git</span><i>•</i>
+                <span>Node.js</span><i>•</i>
+                <span>HTML</span><i>•</i>
+                <span>CSS</span><i>•</i>
+                <span>JavaScript</span><i>•</i>
+                <span>SQL</span><i>•</i>
+                <span>Git</span><i>•</i>
+                <span>Node.js</span><i>•</i>
+                <span>HTML</span><i>•</i>
+                <span>CSS</span><i>•</i>
+                <span>JavaScript</span><i>•</i>
+                <span>SQL</span><i>•</i>
+                <span>Git</span><i>•</i>
+                <span>Node.js</span><i>•</i>
+                <span>HTML</span><i>•</i>
+                <span>CSS</span><i>•</i>
+                <span>JavaScript</span><i>•</i>
+                <span>SQL</span>
+            </div>
+        </section>
+
+        <section class="container contact-info">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="info-card">
+                        <div class="info-icon">@</div>
+                        <span class="info-label">EMAIL</span>
+                        <h3>Let's talk</h3>
+                        <a href="mailto:isabeldeheer8@gmail.com">isabeldeheer8@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-card">
+                        <div class="info-icon">&gt;_</div>
+                        <span class="info-label">GITHUB</span>
+                        <h3>My code</h3>
+                        <a href="https://github.com/8isabel" target="_blank">github.com/8isabel</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-card">
+                        <div class="info-icon">&lt;/&gt;</div>
+                        <span class="info-label">STATUS</span>
+                        <h3>Currently building</h3>
+                        <span class="status-text">NeoCity</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ideas-section container">
+            <div class="section-heading">
+                <span class="section-number">01</span>
+                <div>
+                    <span class="section-label">COMMUNITY</span>
+                    <h2>Got an idea?</h2>
+                    <p>Tell me what I should build next.</p>
+                </div>
+            </div>
+
+            <div class="idea-layout">
+                <div class="idea-form-card">
+                    <div class="terminal-mini-header">
+                        <div class="terminal-dots"><span></span><span></span><span></span></div>
+                        <span>submit-idea.sh</span>
+                    </div>
+                    <form id="ideaForm">
+                        <div class="form-group">
+                            <label for="ideaTitle">PROJECT TITLE</label>
+                            <input type="text" id="ideaTitle" placeholder="e.g. Student productivity app" maxlength="80" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ideaCategory">CATEGORY</label>
+                            <select id="ideaCategory" required>
+                                <option value="">Select a category</option>
+                                <option value="Website">Website</option>
+                                <option value="Web App">Web App</option>
+                                <option value="Game">Game</option>
+                                <option value="Tool">Tool</option>
+                                <option value="Database">Database</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ideaDescription">YOUR IDEA</label>
+                            <textarea id="ideaDescription" rows="5" maxlength="1000" placeholder="Describe your idea..." required></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="ideaName">NAME</label>
+                                <input type="text" id="ideaName" placeholder="Optional">
+                            </div>
+                            <div class="form-group">
+                                <label for="ideaEmail">EMAIL</label>
+                                <input type="email" id="ideaEmail" placeholder="Optional">
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-idea"><span>Submit idea</span><span>→</span></button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+
+                <div class="idea-side">
+                    <div class="idea-side-card">
+                        <span class="big-symbol">?</span>
+                        <h3>What can you suggest?</h3>
+                        <p>Literally anything.</p>
+                        <ul>
+                            <li><span>+</span>Websites</li>
+                            <li><span>+</span>Apps</li>
+                            <li><span>+</span>Games</li>
+                            <li><span>+</span>Developer tools</li>
+                            <li><span>+</span>Weird ideas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="submitted-section container">
+            <div class="section-heading">
+                <span class="section-number">02</span>
+                <div>
+                    <span class="section-label">COMMUNITY IDEAS</span>
+                    <h2>What people suggested</h2>
+                </div>
+            </div>
+            <div id="ideasContainer" class="ideas-grid"></div>
+        </section>
+
+        <footer class="contact-footer">
+            <div>&lt; Isabel.dev /&gt;</div>
+            <span>Built with love &amp; code.</span>
+        </footer>
+    </main>
+</body>
+</html>
