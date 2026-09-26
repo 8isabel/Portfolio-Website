@@ -52,3 +52,32 @@ function commands(command) {
             );
     }
 }
+
+const terminalToggle = document.getElementById("terminalToggle");
+const terminalPopup = document.getElementById("terminalPopup");
+const terminalClose = document.getElementById("terminalClose");
+const terminalInput = document.getElementById("input");
+
+terminalToggle.addEventListener("click", () => {
+
+    terminalPopup.classList.add("active");
+
+    setTimeout(() => {
+        terminalInput.focus();
+    }, 300);
+
+});
+
+terminalClose.addEventListener("click", () => {
+
+    terminalPopup.classList.remove("active");
+
+});
+
+document.addEventListener("keydown", (event) => {
+
+    if (event.key === "Escape") {
+        terminalPopup.classList.remove("active");
+    }
+
+});

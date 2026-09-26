@@ -54,18 +54,54 @@
             </div>
         </div>
     </nav>
-    <section class="terminal-section container">
-        <div class="terminal-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
+    <button id="terminalToggle" class="terminal-toggle">
+        <span class="terminal-icon">&gt;_</span>
+        <span class="terminal-toggle-text">Terminal</span>
+    </button>
+
+    <div id="terminalPopup" class="terminal-popup">
+
+        <div class="terminal-window">
+
+            <div class="terminal-header">
+
+                <div class="terminal-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+
+                <span class="terminal-title">
+                    Isabel.dev — terminal
+                </span>
+
+                <button id="terminalClose" class="terminal-close">
+                    x
+                </button>
+
+            </div>
+            
+            <div id="outcome">
+
+                <p>&gt; Welcome to Isabel.dev</p>
+                <p>&gt; Type "help" for available commands</p>
+
+            </div>
+
+            <div class="terminal-input-wrapper">
+                <span class="terminal-prompt">&gt;</span>
+
+                <input
+                    type="text"
+                    id="input"
+                    placeholder="Type a command..."
+                    autocomplete="off"
+                >
+            </div>
+
         </div>
-        <div id="outcome">
-            <p>> Welkom on Isabel.dev</p>
-            <p>> Typ "help" for available commands</p>
-        </div>
-        <input type="text" id="input" placeholder="Type een commando..." autofocus>
-    </section>
-     
+
+    </div>
+        
 </body>
 </html>
